@@ -1,0 +1,72 @@
+{
+  "dataset": {
+    "n_observations": 1260,
+    "n_countries": 70,
+    "years": "2005-2022",
+    "event_rate": 0.16984126984126985,
+    "train_n": 1050,
+    "test_n": 210,
+    "decision_threshold": 0.15002033738800663
+  },
+  "train_metrics": {
+    "roc_auc": 0.7735333888079885,
+    "brier_score": 0.11902664523710747,
+    "accuracy": 0.6819047619047619,
+    "precision": 0.31797235023041476,
+    "recall": 0.7840909090909091,
+    "f1": 0.4524590163934426,
+    "n_obs": 1050,
+    "n_events": 176,
+    "event_rate": 0.1676190476190476,
+    "threshold": 0.15002033738800663,
+    "confusion_matrix": {
+      "tn": 578,
+      "fp": 296,
+      "fn": 38,
+      "tp": 138
+    }
+  },
+  "test_metrics": {
+    "roc_auc": 0.7167992656058751,
+    "brier_score": 0.14799238560064723,
+    "accuracy": 0.5285714285714286,
+    "precision": 0.25984251968503935,
+    "recall": 0.868421052631579,
+    "f1": 0.4,
+    "n_obs": 210,
+    "n_events": 38,
+    "event_rate": 0.18095238095238095,
+    "threshold": 0.15002033738800663,
+    "confusion_matrix": {
+      "tn": 78,
+      "fp": 94,
+      "fn": 5,
+      "tp": 33
+    }
+  },
+  "cross_validation": {
+    "mean_auc": 0.7520431098888871,
+    "std_auc": 0.014108440752946719,
+    "folds": [
+      0.7428571428571429,
+      0.7514187159229998,
+      0.7388449983309225,
+      0.748191832647157,
+      0.7789028596862133
+    ]
+  },
+  "calibration": {
+    "slope": 0.7180828514824251,
+    "intercept": -0.7128745864601093
+  },
+  "scenario_analysis": {
+    "avg_baseline_debt_gdp_5y": 52.49285714285714,
+    "avg_adverse_debt_gdp_5y": 65.67771428571427,
+    "avg_debt_gdp_delta_pp": 13.184857142857142,
+    "avg_baseline_stress_prob_5y": 0.19550714285714282,
+    "avg_adverse_stress_prob_5y": 0.3613885714285714,
+    "avg_stress_prob_delta": 0.16588142857142857,
+    "pct_countries_high_risk_adverse": 0.4142857142857143,
+    "pct_countries_high_risk_baseline": 0.15714285714285714
+  }
+}
