@@ -76,24 +76,7 @@ signs match economic theory in 8/9 significant coefficients. Full table in
 | Modelled stress probability | 19.6% | 36.1% | **+16.6 pp (≈1.8×)** |
 | Share of countries in "High risk" bucket (≥35% prob.) | 15.7% | 41.4% | **+25.7 pp** |
 
-## Numbers you can use for a CV / resume bullet
 
-- Built a logistic-regression sovereign-risk model on a 1,260-observation,
-  70-country macro-fiscal panel, achieving **0.75 cross-validated ROC-AUC**
-  (0.72 on a chronological, COVID-period out-of-sample holdout) and a
-  **0.148 out-of-sample Brier score**.
-- Validated 8 of 9 statistically significant risk-factor coefficients
-  against economic-theory-consistent signs (p < 0.05) via a parallel
-  `statsmodels` inference fit.
-- Ran an IMF-style baseline-vs-adverse debt sustainability scenario across
-  70 countries, showing an adverse macro shock (−2pp growth, +150bp rates,
-  −1pp primary balance) raises average 5-year debt/GDP by **+13.2 pp** and
-  **nearly doubles** average modelled sovereign-stress probability
-  (19.6% → 36.1%), with high-risk countries rising from 16% to 41% of the
-  sample.
-- Shipped an interactive Streamlit/Plotly dashboard for country-level stress
-  probability, risk-driver attribution, and debt-sustainability scenario
-  comparison.
 
 ## Repository layout
 
